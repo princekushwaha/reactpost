@@ -1,0 +1,23 @@
+.full-window-size {
+  width: 100vw;
+  height: 100vh;
+}
+.form {
+  width: 40rem;
+}
+.input {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  /* border-radius: 10px; */
+  font-size: large;
+}
+.brand-color {
+  color: #00acee;
+}
+.bg-brand-color {
+  background-color: #00acee;
+}
+.form-brand-icon {
+  width: 4rem;
+}
