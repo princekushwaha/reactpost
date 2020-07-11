@@ -1,0 +1,55 @@
+.sidebar {
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+}
+.sidebar-item {
+  /* padding: 1.2rem; */
+  margin-top: 1rem;
+}
+.sidebar-link {
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  width: 15vw;
+  color: black;
+  /* background-color: blue; */
+  /* background-color: brown; */
+}
+
+.sidebar-button {
+  background-color: #00acee;
+  color: white;
+}
+
+.sidebar-link:hover {
+  text-decoration: none;
+  background-color: hsla(197, 100%, 47%, 0.26);
+}
+.active {
+  text-decoration: none;
+  background-color: hsla(197, 100%, 47%, 0.26);
+}
+.border-line {
+  color: bisque;
+}
+.sidebar-image {
+  width: 1.5rem;
+}
+.sidebar-item-label {
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+.sidebar-brand-icon {
+  width: 4rem;
+}
+@media (max-width: 900px) {
+  .sidebar-item-label {
+    display: none;
+  }
+  .sidebar-brand-icon {
+    width: 2rem;
+  }
+}

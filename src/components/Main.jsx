@@ -1,9 +1,16 @@
 import React, { Component } from "react";
-import Header from "./Header";
+import Navigation from "./Navigation";
+import MultiplePosts from "./MultiplePosts";
+
 class Main extends Component {
   state = {};
   render() {
-    return;
+    return (
+      <div>
+        <Navigation active="profile" />
+        <MultiplePosts />
+      </div>
+    );
   }
 }
 

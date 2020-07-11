@@ -1,0 +1,29 @@
+.main {
+  margin-left: 22vw;
+  /* height: 500rem; */
+}
+
+.post-profile-icon {
+  width: 3.5rem;
+  border-radius: 3.5rem;
+  border: 1px bisque solid;
+}
+.post-author-name {
+  font-weight: bolder;
+  margin-left: 1rem;
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+}
+.post-time {
+  font-size: small;
+}
+.post-author-link {
+  text-decoration: none;
+  color: black;
+}
+.post-image {
+  width: 16rem;
+  max-height: 22rem;
+  border: 1px solid bisque;
+  border-radius: 2rem;
+}
