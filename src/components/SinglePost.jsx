@@ -4,10 +4,29 @@ import "./Navigation.css";
 class SinglePost extends Component {
   state = {};
 
+  get_time = () => {
+    let uploaded_on = this.props.post.uploaded_on;
+    let date = new Date(uploaded_on);
+    let months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    return `${date.getDate()}-${months[date.getMonth()]}-${date.getFullYear()}`;
+  };
   render() {
     return (
       <div className="d-flex flex-column  mt-2">
-        <div className="d-flex pl-3">
+        <div className="d-flex pl-2">
           <img src="img/hacker.png" alt="user" className="post-profile-icon" />
           <div className="d-flex flex-row align-items-center">
             <a href="#" className="post-author-link">
@@ -15,20 +34,19 @@ class SinglePost extends Component {
                 {this.props.post.author_username}
               </span>
             </a>
-            <span className="post-time text-muted">
-              {this.props.post.uploaded_on}
-            </span>
+            <span className="post-time text-muted">{this.get_time()}</span>
           </div>
         </div>
         <div className="d-flex m-2">{this.props.post.body}</div>
-
-        <div className="d-flex image-responsive">
-          <img
-            src={this.props.post.image}
-            alt=""
-            className="post-image flex-grow-1 m-2"
-          />
-        </div>
+        {this.props.post.image && (
+          <div className="d-flex image-responsive">
+            <img
+              src={this.props.post.image}
+              alt=""
+              className="post-image flex-grow-1 m-2"
+            />
+          </div>
+        )}
         <div className="d-flex flex-row justify-content-center border-bottom border-line mt-2">
           <h5>Like</h5>
         </div>

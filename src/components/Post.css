@@ -1,5 +1,6 @@
 .main {
   margin-left: 20vw;
+  width: 40em;
   /* height: 500rem; */
 }
 
@@ -10,20 +11,52 @@
 }
 .post-author-name {
   font-weight: bolder;
-  margin-left: 1rem;
+  margin-left: 0.6rem;
   margin-right: 0.7rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .post-time {
-  font-size: small;
+  font-size: smaller;
 }
 .post-author-link {
   text-decoration: none;
   color: black;
 }
 .post-image {
-  width: 16rem;
-  max-height: 22rem;
+  width: 12rem;
+  max-height: 30rem;
   border: 1px solid bisque;
   border-radius: 2rem;
+}
+.tweet-text-area {
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+.tweet-text-area::placeholder {
+  font-size: larger;
+  margin-left: 2rem;
+}
+.tweet-image-upload {
+  /* height: 5rem; */
+  background-color: hsla(197, 100%, 47%, 0.26);
+}
+
+.tweet-form {
+  width: 50rem;
+}
+@media (max-width: 900px) {
+  .tweet-form {
+    width: 70vw;
+  }
+  .main {
+    margin-left: 20vw;
+    width: 80vw;
+  }
+  .post-image {
+    width: 16rem;
+    max-height: 20rem;
+    border: 1px solid bisque;
+    border-radius: 2rem;
+  }
 }

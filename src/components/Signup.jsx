@@ -86,7 +86,7 @@ class LoginPage extends Component {
         if (response.status === 201) {
           setToken(data.key);
         }
-        this.setState({ isLoading: false });
+        this.setState({ isLoading: false, loggedin: true });
       })
       .catch((errors) => {
         if (errors.response && errors.response.status === 400) {

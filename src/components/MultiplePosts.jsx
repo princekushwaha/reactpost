@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Post.css";
 import SinglePost from "./SinglePost";
 import HOSTNAME, { getToken } from "../api/hostname";
+import Loader from "./Loader";
 import axios from "axios";
 
 class MultiplePosts extends Component {
@@ -11,17 +12,24 @@ class MultiplePosts extends Component {
   };
 
   render() {
-    return <div className="main">{this.state.posts.map((value) => {})}</div>;
+    return (
+      <div className="main">
+        <div className="d-flex justify-content-center">
+          <Loader isActive={this.state.isLoading} />
+        </div>
+
+        {this.state.posts.map((value) => (
+          <SinglePost post={value} key={value.image}></SinglePost>
+        ))}
+      </div>
+    );
   }
 
   componentDidMount() {
     console.log("i m fetching");
-    // this.fetchPosts();
-    this.setState({ isLoading: false });
-    lkjflkf;
+    this.fetchPosts();
   }
   fetchPosts = async () => {
-    this.setState({ isLoading: false });
     let fetch_url = HOSTNAME + "/post/";
     let header = {
       Authorization: "Token " + getToken(),
@@ -37,6 +45,7 @@ class MultiplePosts extends Component {
       .catch((error) => {
         window.alert(error.message);
       });
+    this.setState({ isLoading: false });
   };
 }
 

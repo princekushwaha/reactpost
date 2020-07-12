@@ -10,14 +10,14 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact>
-          <Main />
-        </Route>
         <Route path="/login">
           <Login />
         </Route>
         <Route path="/signup">
           <Signup />
+        </Route>
+        <Route path="/">
+          <Main />
         </Route>
       </Switch>
     </Router>

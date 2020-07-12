@@ -21,3 +21,6 @@ export let setToken = (token) => {
 export let getToken = () => {
   return localStorage.getItem("auth-token");
 };
+export let removeToken = () => {
+  localStorage.removeItem("auth-token");
+};
