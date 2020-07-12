@@ -79,7 +79,7 @@ class LoginPage extends Component {
   render() {
     if (this.state.loggedin) {
       window.location.href = "/";
-      return;
+      return <div></div>;
     }
     return (
       <div className="d-flex justify-content-center align-items-center full-window-size">

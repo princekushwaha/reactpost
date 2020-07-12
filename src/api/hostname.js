@@ -2,8 +2,9 @@
 //   return "http://192.168.43.21:8000";
 // };
 // export default HOSTNAME;
+import axios from "axios";
 
-let HOSTNAME;
+let HOSTNAME = "http://192.168.43.21:8000";
 export default HOSTNAME = "http://192.168.43.21:8000";
 
 export let check_loggedin = () => {
@@ -15,4 +16,8 @@ export let check_loggedin = () => {
 
 export let setToken = (token) => {
   localStorage.setItem("auth-token", token);
+};
+
+export let getToken = () => {
+  return localStorage.getItem("auth-token");
 };
