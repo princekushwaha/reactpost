@@ -23,13 +23,19 @@ class SinglePost extends Component {
     ];
     return `${date.getDate()}-${months[date.getMonth()]}-${date.getFullYear()}`;
   };
+  handle_likes = (event) => {
+    console.log(event);
+  };
   render() {
     return (
       <div className="d-flex flex-column  mt-2">
         <div className="d-flex pl-2">
           <img src="img/hacker.png" alt="user" className="post-profile-icon" />
           <div className="d-flex flex-row align-items-center">
-            <a href="#" className="post-author-link">
+            <a
+              href={this.props.post.author_username}
+              className="post-author-link"
+            >
               <span className="post-author-name">
                 {this.props.post.author_username}
               </span>
@@ -47,8 +53,11 @@ class SinglePost extends Component {
             />
           </div>
         )}
+
         <div className="d-flex flex-row justify-content-center border-bottom border-line mt-2">
-          <h5>Like</h5>
+          <button onClick={this.handle_likes} onMouseEnter={this.handle_likes}>
+            <img src="img/heart.svg" alt="like" className="like-btn" />
+          </button>
         </div>
       </div>
     );

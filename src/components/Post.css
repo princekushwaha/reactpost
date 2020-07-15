@@ -60,3 +60,20 @@
     border-radius: 2rem;
   }
 }
+
+.profile-avatar-image {
+  width: 7rem;
+}
+.profile-joined-icon {
+  width: 1.5rem;
+}
+
+.header-title {
+  font-weight: 900;
+  font-size: large;
+  /* margin-top: 4rem; */
+}
+.like-btn {
+  width: 2.3rem;
+  filter: grayscale(1);
+}

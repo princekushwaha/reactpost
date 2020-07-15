@@ -14,10 +14,16 @@ class MultiplePosts extends Component {
   render() {
     return (
       <div className="main">
-        <div className="d-flex justify-content-center">
+        {/* <div className="d-flex justify-content-center">
           <Loader isActive={this.state.isLoading} />
-        </div>
-
+        </div> */}
+        <SinglePost
+          post={{
+            author_username: "princekushwaha",
+            author_firstname: "Prince Kushwaha",
+            body: "Hello World",
+          }}
+        />
         {this.state.posts.map((value) => (
           <SinglePost post={value} key={value.image}></SinglePost>
         ))}

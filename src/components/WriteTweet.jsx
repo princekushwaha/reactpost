@@ -54,6 +54,7 @@ class WriteTweet extends Component {
             className="tweet-text-area pt-3 pl-3"
             placeholder="What's Happening"
             onChange={this.listen_change}
+            autoFocus
           />
           <input
             type="file"
