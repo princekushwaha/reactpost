@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/twitto/static/css/main.6cd5279a.chunk.css",
+    "main.js": "/twitto/static/js/main.2d8ed8d5.chunk.js",
+    "main.js.map": "/twitto/static/js/main.2d8ed8d5.chunk.js.map",
+    "runtime-main.js": "/twitto/static/js/runtime-main.52c53d72.js",
+    "runtime-main.js.map": "/twitto/static/js/runtime-main.52c53d72.js.map",
+    "static/js/2.b9c8a235.chunk.js": "/twitto/static/js/2.b9c8a235.chunk.js",
+    "static/js/2.b9c8a235.chunk.js.map": "/twitto/static/js/2.b9c8a235.chunk.js.map",
+    "index.html": "/twitto/index.html",
+    "precache-manifest.e86af1fd08e9e708998016bd1da4ee52.js": "/twitto/precache-manifest.e86af1fd08e9e708998016bd1da4ee52.js",
+    "service-worker.js": "/twitto/service-worker.js",
+    "static/css/main.6cd5279a.chunk.css.map": "/twitto/static/css/main.6cd5279a.chunk.css.map",
+    "static/js/2.b9c8a235.chunk.js.LICENSE.txt": "/twitto/static/js/2.b9c8a235.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/twitto/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52c53d72.js",
+    "static/js/2.b9c8a235.chunk.js",
+    "static/css/main.6cd5279a.chunk.css",
+    "static/js/main.2d8ed8d5.chunk.js"
+  ]
+}
